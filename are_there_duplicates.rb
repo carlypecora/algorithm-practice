@@ -34,15 +34,15 @@
 
 #OR
 
-# def are_there_duplicates(*args)
-# 	sorted = args.sort
-# 	sorted.each_with_index do |arg, i|
-# 		if arg == sorted[i + 1]
-# 			return true
-# 		end 
-# 	end
-# 	false
-# end
+def are_there_duplicates(*args)
+	sorted = args.sort
+	sorted.each_with_index do |arg, i|
+		if arg == sorted[i + 1]
+			return true
+		end 
+	end
+	false
+end
 
 puts are_there_duplicates(1, 2, 3)
 puts are_there_duplicates(1, 2, 2)
