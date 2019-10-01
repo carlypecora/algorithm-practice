@@ -8,20 +8,27 @@
 // minMax([2334454,5])   == [5, 2334454]
 // minMax([1])           == [1, 1]
 
-function minMax(arr){
- let min = arr[0]
- for (let num in arr) {
-   if (arr[num] < min){ 
-       min = arr[num]
-    }
-  }
-  let max = min
-  for (let num in arr) {
-    if (arr[num] > max) {
-      max = arr[num]
-    }
-  }
-  return [min, max]
+// function minMax(arr){
+//  let min = arr[0]
+//  for (let num in arr) {
+//    if (arr[num] < min){ 
+//        min = arr[num]
+//     }
+//   }
+//   let max = min
+//   for (let num in arr) {
+//     if (arr[num] > max) {
+//       max = arr[num]
+//     }
+//   }
+//   return [min, max]
+//  }
+
+ //OR
+
+
+ function minMax(arr) {
+ 	return [Math.min(...arr), Math.max(...arr)]
  }
 
 console.log(minMax([1,2,3,4,5])) // == [1,5]
