@@ -1,4 +1,4 @@
-//create a function that replicates the js map() function
+// create a function that replicates the js map() function
 
 Array.prototype.myMap = function(callback){
 	//create a new array to push all elements passed into the callback function
